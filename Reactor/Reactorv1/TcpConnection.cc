@@ -15,6 +15,6 @@ size_t TcpConnection::send(const string &msg)
 string TcpConnection::receive()
 {
     char buf[65535]={0};
-    _sockio.readn(buf,sizeof(buf));
+    _sockio.readLine(buf,sizeof(buf));
     return string(buf);
 }

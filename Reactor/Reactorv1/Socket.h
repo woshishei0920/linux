@@ -5,6 +5,7 @@
 #include <string>
 #include "NonCopyable.h"
 class Socket
+:public NonCopyable
 {
 public:
     Socket();
